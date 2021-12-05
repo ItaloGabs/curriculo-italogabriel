@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Italo Gabriel - prototype 1</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="./Style/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caixa-menu" id="topomenu">
+                <nav>
+                    <ul class="menu-lateral">
+                    <li><a href="#dev-front">Linguagem</a></li>
+                    <li><a href="#trabalho">Espaço de trabalho</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article class="conteudo_sobre">
+            <button class="seta" id="setaid1">⮘</button>
+            <img src="./imgs/etc_img/myphoto.jpg" class="myphoto" id="myphotoid">
+            <button class="seta" id="setaid2">⮚</button>
+            <div class="sobreMim" id="sobremimid">
+                <h1 class="titulos_principais">Olá, Sou Italo Gabriel</h1>
+                <p class="texto_sobre" id="textosobre">
+                    Tenho 20 anos, moro em maceio-AL e tenho o objetivo de Ingressar no mercado de trabalho, obtendo a oportunidade de desenvolver-me
+                    profissionalmente e busca colocação na carreira profissional;<br>Estou no 4 periodo na Formação superior (cursando) Sistema de Informações na Faculdade Estácio de Sá.
+                </p>
+            </div>
+            <script src="./Javascript/sobre.js"></script>
+        </article>
+        <section class="linguagens" id="dev-front">
+            <div class="lingua">
+                <h1 class="titulos_principais">Linguagens / Front-end</h1>
+                <ul class="linguasdev">
+                    <li class="items i">HTML 5 e CSS</li>
+                    <li class="items i">JavaScript</li>
+                    <li class="items i">SQL</li>
+                    <li class="items i">Python</li>
+                </ul>
+            </div>
+            <div class="icones" id="icones">
+                <img src="./imgs/linguas/Html.png" class="icon icon-icon" id='html'>
+                <img src="./imgs/linguas/Css.png" class="icon icon-icon" id="css">
+                <img src="./imgs/linguas/Js.png" class="icon icon-icon" id="js">
+                <img src="./imgs/linguas/SQL.png" class="icon icon-icon" id="sql">
+                <img src="./imgs/linguas/Python.png" class="icon icon-icon" id="py">
+            </div>
+        </section>
+        <script src="./Javascript/scriptcurriculo.js"></script>
+        <section class="area">
+            <h1 class="titulos_principais desktop_tx">Espaço de trabalho(Adaptado para REMOTO)</h1>
+            <img src="./imgs/etc_img/Desktop.jpg" class="desktop" width="1210" height="420" id="trabalho">
+        </section>
+        <section class="exp-profissional" id="experiencia">
+            <img src="./imgs/etc_img/icons8-usuário-de-gênero-neutro-100.png" class="user">
+            <div class="profissional">
+                <h1 class="titulos_principais">Experiencia Profissional</h1>
+                <ul class="texto_sobre"> 
+                    <li id="text2"> Casa da Industria-FIEA /
+                        Cargo: Suporte TI - Estagio                   
+                    </li>
+                    <li id="text2">Locadora São Sebastião(SSRENT A CAR) /
+                        Cargo: Assistente Administrativo</li>
+                    </ul>
+                </div>
+        </section>
+        <section class="contact_page" id="contatos">
+            <div class="contact">
+                <h1 class="titulos_principais" id="contatos">	
+                    &#128222;Contatos & Redes Socias</h1>
+            </div>
+            <div class="icones">
+                <form class="formulario">
+                    <label for="titulo">Email:</label>
+                    <input type="email" placeholder="seuemail@dominio.com" required class="email">
+                    <label for="mensagem">Proposta:</label>
+                    <textarea class="mensagem" id="mensagem" cols="45" rows="10" placeholder="sua proposta aqui"></textarea>
+                    <button type="submit" class="envia" id="enviar">Enviar proposta</button>
+                </form>
+                <a href="https://www.instagram.com/eu_itaru/" target="_blank" class="icon2"><img src="./imgs/socias/icons8-instagram-240.png" id='insta'></a>
+                <a href="https://github.com/ItaloGabs" target="_blank" class="icon2"><img src="./imgs/socias/icons8-github-240.png" id='github'></a>
+                <a href="https://www.linkedin.com/in/italo-gabriel-dos-santos-tavares-4449631a6/" target="_blank" class="icon2"><img src="./imgs/socias/icons8-linkedin-circundado-240.png" id='linke'></a>
+            </div>
+        </section>
+        <footer class="end">
+            <div class="tx">
+                <h3>&copy; Copyright Italo Gabriel dos S.T.</h3>
+                <h2>&#128231;gabrielgg.tavares@gmail.com</h2>
+                <h2>&#128242;(+55)82987117461</h2>
+            </div>
+        </footer>
+        <a href="#topomenu" style="text-decoration: none;"><p class="topo">home</p></a>
+    </main>
+    
+</body>
+</html>
