@@ -152,6 +152,10 @@ nav a:hover{
     padding: 54px 59px 110px 68px;
     background-color: rgb(255, 96, 96);
     box-shadow: inset 1px 7px 10px -4px, inset 1px -5px 10px -4px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap
 }
 .desktop{
     border: 1px solid black;
