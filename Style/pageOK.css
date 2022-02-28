@@ -1,0 +1,11 @@
+.OK{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}

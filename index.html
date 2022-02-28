@@ -4,72 +4,220 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Italo Gabriel - prototype 1</title>
-        <link rel="stylesheet" href="reset.css">
+        <title>Italo Gabriel - prototype 1.5</title>
+        <link rel="stylesheet" href="./Style/reset.css">
         <link rel="stylesheet" href="./Style/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./Style/menu.css">
+        <link rel="stylesheet" href="./Style/barra_menu.css">
+        <link rel="stylesheet" href="./Style/skills.css">
+        <link rel="stylesheet" href="./Style/repo_Github.css">
+        <link rel="stylesheet" href="./Style/exper_prof.css">
+        <link rel="stylesheet" href="./Style/contact_page.css">
+        <link rel="stylesheet" href="./Style/resposive.css">
         <link rel="shortcut icon" type="imagex/png" href="./imgs/etc_img/correspondencia.ico">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="Javascript/jquery-3.6.0.js"></script>
     </head>
     <body>
         <header>
-            <div class="caixa-menu" id="topomenu">
-                <nav>
-                    <ul class="menu-lateral">
-                    <li><a href="#dev-front">Linguagem</a></li>
-                    <li><a href="#trabalho">Espaço de trabalho</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#contatos">Contatos</a></li>
+          <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="topomenu">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="javascript:void(0)">
+                <img src="imgs/etc_img/myphoto.jpg" alt="Logo" style="width: 55px;" class="rounded-pill">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#experiencia">Experiencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#contatos">Contatos</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
+                <div class="alert alert-warning alert-dismissible fade show">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                  <strong>Atenção!</strong> A Página consiste com alguns bugs, por favor compreenda.
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <article class="conteudo_sobre">
-            <button class="seta" id="setaid1">⮘</button>
-            <img src="./imgs/etc_img/myphoto.jpg" class="myphoto" id="myphotoid">
-            <button class="seta" id="setaid2">⮚</button>
-            <div class="sobreMim" id="sobremimid">
-                <h1 class="titulos_principais">Olá, Sou Italo Gabriel</h1>
-                <p class="texto_sobre" id="textosobre">
-                    Tenho 20 anos, moro em maceio-AL e tenho o objetivo de Ingressar no mercado de trabalho, obtendo a oportunidade de desenvolver-me
-                    profissionalmente e busca colocação na carreira profissional;<br>Estou no 4 periodo na Formação superior (cursando) Sistema de Informações na Faculdade Estácio de Sá.
-                </p>
-            </div>
-            <script src="./Javascript/sobre.js"></script>
-        </article>
+        <article class="conteudo_sobre naveg">
+            <div id="demo" class="carousel slide naveg" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imgs/etc_img/sobremim.png" alt="Minha apresentação" class="d-block slides">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imgs/etc_img/estacio1.png" alt="Faculdade" class="d-block slides" >
+                    <div class="carousel-caption">
+                      <p>Estou no 4 periodo na Formação superior (cursando) Sistema de Informações na Faculdade Estácio de Sá.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imgs/etc_img/Desktop.jpg" alt="Area remota" class="d-block slides">
+                    <div class="carousel-caption">
+                      <p>Espaço de trabalho(Adaptado para REMOTO)</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            
+            </article>
+            <script src="./Javascript/barras.js"></script>
+        <div id="barra" class="barra_menu">Skills
+          <img src="./imgs/etc_img/seta-para-expandir.png" class="seta" id="seta"></div>
         <section class="linguagens" id="dev-front">
             <div class="lingua">
-                <h1 class="titulos_principais">Linguagens / Front-end</h1>
-                <ul class="linguasdev">
-                    <li class="items i">HTML 5 e CSS</li>
-                    <li class="items i">JavaScript</li>
-                    <li class="items i">SQL</li>
-                    <li class="items i">Python</li>
-                </ul>
+                <h1 class="frontend">Linguagens / Front-end</h1>
             </div>
             <div class="icones" id="icones">
-                <img src="./imgs/linguas/Html.png" class="icon icon-icon" id='html'>
-                <img src="./imgs/linguas/Css.png" class="icon icon-icon" id="css">
-                <img src="./imgs/linguas/Js.png" class="icon icon-icon" id="js">
-                <img src="./imgs/linguas/SQL.png" class="icon icon-icon" id="sql">
-                <img src="./imgs/linguas/Python.png" class="icon icon-icon" id="py">
+                <img src="./imgs/linguas/Html.png" class="icon icon-icon" data-bs-toggle="modal" data-bs-target="#html">
+                    <div class="modal fade" id="html">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Habilidades com HTML5</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                          <div class="modal-body">
+                            Projetos:
+                              <a href="https://italogabs.github.io/Twitter_unoficial/" target="_blank">https://italogabs.github.io/Twitter_unoficial/</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                <img src="./imgs/linguas/Css.png" class="icon icon-icon" data-bs-toggle="modal" data-bs-target="#css">
+                    <div class="modal fade" id="css" >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Css</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                          <div class="modal-body">
+                            Projeto: 
+                            <a href="https://github.com/ItaloGabs/ItaloGabs" target="_blank">https://github.com/ItaloGabs/ItaloGabs</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                <img src="./imgs/linguas/Js.png" class="icon icon-icon" data-bs-toggle="modal" data-bs-target="#js">
+                      <div class="modal fade" id="js">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">Javascript</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                              gitHub:
+                              <a href="https://github.com/ItaloGabs/Fosforo-js">GitHub Fosforo js</a><br>
+                              Página: 
+                              <a href="https://italogabs.github.io/Fosforo-js/">Página Fosforo-js</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                <img src="./imgs/linguas/SQL.png" class="icon icon-icon" data-bs-toggle="modal" data-bs-target="#sql">
+                      <div class="modal fade" id="sql">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">Minha documentação SQL</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                              <a href="https://github.com/ItaloGabs/Instruct-SQL">https://github.com/ItaloGabs/Instruct-SQL</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                <img src="./imgs/linguas/Python.png" class="icon icon-icon" data-bs-toggle="modal" data-bs-target="#py">
+                      <div class="modal fade" id="py">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">Programa em Python</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                              <a href="https://github.com/ItaloGabs/OccultFolder">https://github.com/ItaloGabs/OccultFolder</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+            </div>
+            <div class="lingua">
+              <h1 class="frontend t">FrameWorks</h1>
+            </div>
+            <div class="icones" id="icones">
+              <img src="./imgs/linguas/bootstrap.png" class="icon icon-icon">
+              <img src="./imgs/linguas/jquery.png" class="icon icon-icon">
             </div>
         </section>
-        <script src="./Javascript/scriptcurriculo.js"></script>
-        <section class="area">
-            <h1 class="titulos_principais desktop_tx">Espaço de trabalho(Adaptado para REMOTO)</h1>
-            <img src="./imgs/etc_img/Desktop.jpeg" class="desktop" width="1210" height="520" id="trabalho">
+        <div id="barra1" class="barra_menu">GitHub
+          <img src="./imgs/etc_img/seta-para-expandir.png" class="seta" id="seta">
+        </div>
+        <section class="area" id="github">
+            <img class="gitHub"src="https://img.icons8.com/bubbles/100/000000/github.png"/>
+            <h1 class="reposi">Meus principais Repositorios</h1>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-3">
+                    <a href="https://github.com/ItaloGabs">
+                      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItaloGabs&langs_count=8&theme=dracula"/>
+                    </a>
+                  </div>
+                <div class="col-sm">
+                  <div class="col" style="margin-left: 15px;">
+                      <a href="https://github.com/ItaloGabs/Twitter_unoficial">
+                        <img class="divisao espace" src="https://github-readme-stats.vercel.app/api/pin/?username=ItaloGabs&repo=Twitter_unoficial"/>
+                      </a>
+                      <a href="https://github.com/ItaloGabs/curriculo-italogabriel">
+                        <img class="divisao espace" src="https://github-readme-stats.vercel.app/api/pin/?username=ItaloGabs&repo=curriculo-italogabriel"/>
+                    </a>
+                      <a href="https://github.com/ItaloGabs/Fosforo-js">
+                        <img class="divisao" src="https://github-readme-stats.vercel.app/api/pin/?username=ItaloGabs&repo=Fosforo-js"/>
+                    </a>
+                      <a href="https://github.com/ItaloGabs/OccultFolder">
+                        <img class="divisao" src="https://github-readme-stats.vercel.app/api/pin/?username=ItaloGabs&repo=OccultFolder"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
         </section>
         <section class="exp-profissional" id="experiencia">
             <img src="./imgs/etc_img/icons8-usuário-de-gênero-neutro-100.png" class="user">
             <div class="profissional">
-                <h1 class="titulos_principais">Experiencia Profissional</h1>
+                <h2>Experiencia Profissional <span class="badge bg-primary">Atualizado</span></h2>
                 <ul class="texto_sobre"> 
                     <li id="text2"> Casa da Industria-FIEA /
-                        Cargo: Suporte TI - Estagio                   
+                        Cargo: Suporte TI - Estagio - 7 Meses                  
+                    </li>
+                    <li id="text2"> Casa da Industria-FIEA /
+                        Cargo: Dev - Estagio                   
                     </li>
                     <li id="text2">Locadora São Sebastião(SSRENT A CAR) /
-                        Cargo: Assistente Administrativo</li>
+                        Cargo: Assistente Administrativo
+                    </li>
                     </ul>
                 </div>
         </section>
@@ -79,23 +227,45 @@
                     &#128222;Contatos & Redes Socias</h1>
             </div>
             <div class="icones">
-                <form class="formulario">
-                    <label for="titulo">Email:</label>
-                    <input type="email" placeholder="seuemail@dominio.com" required class="email">
-                    <label for="mensagem">Proposta:</label>
-                    <textarea class="mensagem" id="mensagem" cols="45" rows="10" placeholder="sua proposta aqui"></textarea>
-                    <button type="submit" class="envia" id="enviar">Enviar proposta</button>
-                </form>
-                <a href="https://www.instagram.com/eu_itaru/" target="_blank" class="icon2"><img src="./imgs/socias/icons8-instagram-240.png" id='insta'></a>
-                <a href="https://github.com/ItaloGabs" target="_blank" class="icon2"><img src="./imgs/socias/icons8-github-240.png" id='github'></a>
-                <a href="https://www.linkedin.com/in/italo-gabriel-dos-santos-tavares-4449631a6/" target="_blank" class="icon2"><img src="./imgs/socias/icons8-linkedin-circundado-240.png" id='linke'></a>
+              <form action="https://formsubmit.co/gabrielgg.tavares@gmail.com" method="POST" name="form" class="was-validated">
+                <div class="mb-3 mt-3">
+                  <h2>Contato</h2>
+                  <label for="nome" class="form-label">Assunto</label>
+                  <input type="text" class="form-control" id="assunto" placeholder="Titulo do Email" name="assunto" required>
+                  <div class="valid-feedback">Valido.</div>
+                  <div class="invalid-feedback">Insira um assunto valido.</div>
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="nome" class="form-label d-flex">Seu nome:</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Seu nome" name="nome" required>
+                  <div class="valid-feedback">Nome Valido.</div>
+                  <div class="invalid-feedback">Nome invalido.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label d-flex">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="seuemail@dominio.com.br" name="email" required>
+                  <div class="valid-feedback">Email Valido.</div>
+                  <div class="invalid-feedback">Insira um Email valido.</div>
+                </div>
+                <label for="comment">Comentario:</label>
+                <textarea class="form-control" rows="5" id="comment" name="mensagem"></textarea>
+                <div class="form-check mb-3 d-flex">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary envia">Enviar</button>
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/OK.html">
+              </form>
             </div>
+            <a href="https://www.instagram.com/eu_itaru/" target="_blank" class="icon2"><img src="./imgs/socias/icons8-instagram-240.png" id='insta'></a>
+            <a href="https://github.com/ItaloGabs" target="_blank" class="icon2"><img src="./imgs/socias/icons8-github-240.png" id='githubb'></a>
+            <a href="https://www.linkedin.com/in/italo-gabriel-dos-santos-tavares-4449631a6/" target="_blank" class="icon2"><img src="./imgs/socias/icons8-linkedin-circundado-240.png" id='linke'></a>
         </section>
         <footer class="end">
             <div class="tx">
                 <h3>&copy; Copyright Italo Gabriel dos S.T.</h3>
-                <h2>&#128231;gabrielgg.tavares@gmail.com</h2>
-                <h2>&#128242;(+55)82987117461</h2>
             </div>
         </footer>
         <a href="#topomenu" style="text-decoration: none;"><p class="topo">home</p></a>
